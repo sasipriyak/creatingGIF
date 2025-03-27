@@ -1,11 +1,6 @@
 import imageio.v3 as iio
 import os
 
-'''
-filenames = ['C:/Users/sasip/OneDrive/Documents/IdeoNest/#Day1/frame1.png', 
-             'C:/Users/sasip/OneDrive/Documents/IdeoNest/#Day1/frame2.png']
-'''
-
 input_files = input("Enter PNG file paths (comma-separated): ").split(',')
 filenames = [file.strip() for file in input_files]
 
@@ -19,7 +14,7 @@ for filename in filenames:
         print(f"Error: File not found -> {filename}")
 
 if images:
-    output_path = "C:/Users/sasip/OneDrive/Documents/IdeoNest/Day1/Harsha.gif"
+    output_path = "Priya.gif"
     iio.imwrite(output_path, images, duration=500, loop=0)
     print(f"GIF created successfully: {output_path}")
 else:
